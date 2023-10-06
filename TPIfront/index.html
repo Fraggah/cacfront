@@ -1,31 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP Integrador Front Stefanucci</title>
-</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
 
+  <title>Trabajo Integrador HTML 23648</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
+
     <header>
-        <div><img src="./images/codoacodo.png" width="100px" height="100" alt="logo codo a codo" title="Logo"></div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#" target="_blank">Index</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/images/codoacodo.png" alt="" width="100" class="d-inline-block align-text-top">
+                </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link active" aria-current="page" href="#">Conf Bs As</a>
+                        </li>
+                    </ul>
+                <!-- Agrega el botón del menú hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="justify-content: end;" id="navbarNav">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: green;">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+<main>
+    
+    <div style="background-color: black;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="opacity: 0.6;" src="images/ba1.jpg" class="d-block w-100" alt="imagen1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Conf Bs As</h5> 
+              <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Van a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para tí. Te esperamos!</p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary btn-radial" style="margin-right: 5px; background-color: rgba(0, 0, 0, 0); border-color: white;">Quiero ser orador</button>
+                <button class="btn btn-success btn-radial">Comprar tickets</button>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="opacity: 0.6;" src="images/ba2.jpg" class="d-block w-100" alt="imagen2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary btn-radial" style="margin-right: 5px; background-color: rgba(0, 0, 0, 0); border-color: white;">Quiero ser orador</button>
+                <button class="btn btn-success btn-radial">Comprar tickets</button>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img style="opacity: 0.6;" src="images/ba3.jpg" class="d-block w-100" alt="imagen3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-primary btn-radial" style="margin-right: 5px; background-color: rgba(0, 0, 0, 0); border-color: white;">Quiero ser orador</button>
+                <button class="btn btn-success btn-radial">Comprar tickets</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <section >
+        <h2 style="text-align: center;"><span style="font-size: 50%;">CONOCE A LOS</span> <br><span style="font-size: 120%;"><b>ORADORES</b></span></h2>
+
+        <div class="container" style="justify-content: center;">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6" style="width: 295px;">
+                    <div class="image-card">
+                        <img src="./images/steve.jpg" width="250px" alt="...">
+                        <div class="text-content">
+                            <div class="skills">
+                                <span  class="span-destacado" style="background-color: rgb(91, 6, 75);">Javascript</span>
+                                <span  class="span-destacado" style="background-color: rgb(73, 4, 4);">React</span>
+                            </div>
+                            <h5>Steve Jobs</h5>
+                            <p style="max-width: 250px;">Steve Jobs un influyente empresario y cofundador de Apple. Su enfoque en la innovación y el diseño revolucionó la industria tecnológica, dejando un legado duradero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" style="width: 295px;">
+                    <div class="image-card">
+                        <img src="./images/bill.jpg" width="250px">
+                        <div class="text-content">
+                            <div class="skills">
+                                <span  class="span-destacado" style="background-color: green;">HTML</span>
+                                <span class="span-destacado" style="background-color: red;">CSS</span>
+                            </div>
+                            <h5>Bill Gates</h5>
+                            <p style="max-width: 250px;">Steve Jobs un influyente empresario y cofundador de Apple. Su enfoque en la innovación y el diseño revolucionó la industria tecnológica, dejando un legado duradero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" style="width: 295px;">
+                    <div class="image-card">
+                        <img src="./images/ada.jpeg" width="250px" alt="...">
+                        <div class="text-content">
+                            <div class="skills">
+                                <span class="span-destacado" style="background-color: blue;">Python</span>
+                                <span class="span-destacado" style="background-color: rgb(105, 105, 0);">Django</span>
+                            </div>
+                            <h5>Ada Lovelace</h5>
+                            <p style="max-width: 250px;">Steve Jobs un influyente empresario y cofundador de Apple. Su enfoque en la innovación y el diseño revolucionó la industria tecnológica, dejando un legado duradero.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </header>
-    <!--carrusel-->
-    <section>
-
-
     </section>
-    <!--fin carrusel-->
-    <!--oradores-->
-</body>
 
+    <section >
+        <section style="background-color: rgb(40, 40, 40);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images/honolulu.jpg" height="400px" alt="Honolulu" class="img-fluid float-left" >
+                    </div>
+                    <div class="col-md-6">
+                        <h2 style="color: white; margin-top: 10px;">Bs As - Octubre</h2>
+                        <p style="color: white; font-size: 80%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. At placeat molestias vitae unde facere voluptatem minus voluptates commodi corrupti tenetur! Pariatur qui enim animi sapiente sed error similique molestiae ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, excepturi deleniti harum facilis id, a illo assumenda officiis illum praesentium eos. Qui laborum ratione in hic ducimus debitis voluptatum aperiam.</p>
+                        <a style="border: 1px solid white; padding: 1% ;" href="#">Conocé más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="form-orador">
+            <div class="container" >
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-6">
+                        <h2>Conviértete en un <span>orador</span></h2>
+                        <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" placeholder="Nombre" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" placeholder="Apellido" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div>
+                                <textarea rows="4" placeholder="Sobre qué quieres hablar?" required></textarea>
+                                <div style="text-align: start; color: rgb(158, 158, 158); font-size: small;">Recuerda incluir un título para tu charla.</div>
+                                <div>
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+</main>
+
+<footer >
+    <div >
+        <ul >
+            <li >
+                <a href="#">Preguntas <span>frecuentes</span></a>
+            </li>
+            <li >
+                <a  href="#">Contáctanos</a>
+            </li>
+            <li >
+                <a  href="#">Prensa</a>
+            </li>
+            <li >
+                <a  href="#">Conferencias</a>
+            </li>
+            <li >
+                <a  href="#">Términos y <span>condiciones</span></a>
+            </li>
+            <li >
+                <a  href="#">Privacidad</a>
+            </li>
+            <li >
+                <a href="#">Estudiantes</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

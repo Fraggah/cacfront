@@ -1,0 +1,104 @@
+
+  /* Estilo personalizado para el carrusel */
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-end; /* Alinea a la derecha horizontalmente */
+    height: 100%;
+    padding: 0 20px; /* Espacio en los lados */
+  }
+
+  /* Estilo para el título */
+  .carousel-caption h5 {
+    font-size: 24px; /* Tamaño del texto del título */
+    margin-top: 10em;
+    margin-bottom: 10px; /* Espacio entre título y párrafo */
+    text-align: right; /* Alinea el texto del título a la derecha */
+  }
+
+  /* Estilo para el párrafo */
+  .carousel-caption p {
+    font-size: 16px; /* Tamaño del texto del párrafo */
+    text-align: right; /* Alinea el texto del párrafo a la derecha */
+
+  }
+  .image-card {
+    border: 1px solid #e0e0e0; /* Color y grosor del borde */
+    border-radius: 5px; /* Radio de borde para hacerlo más suave */
+    padding: 10px; /* Espaciado interno para separar el contenido del borde */
+}
+/* Estilo para el formulario */
+#form-orador {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    padding: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    text-align: center; /* Centro de texto */
+}
+
+/* Estilo para el botón de enviar */
+#form-orador button[type="submit"] {
+    background-color: #4CAF50; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición de color al pasar el cursor */
+}
+
+/* Centrar el botón en el formulario */
+#form-orador button[type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Cambiar el color del botón al pasar el cursor sobre él */
+#form-orador button[type="submit"]:hover {
+    background-color: #45a049; /* Cambia a un tono ligeramente más oscuro de verde */
+}
+textarea {
+    width: 100%; /* El 100% del ancho disponible */
+    /* O puedes especificar un valor en píxeles, por ejemplo: width: 300px; */
+}
+input[type="text"] {
+    width: 100%;
+}
+input[type="email"] {
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(to bottom, #0074E4, #0047AB); /* Fondo con degradado */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Alineación horizontal al centro */
+    padding: 20px; /* Espaciado interior para el contenido */
+}
+
+ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+li {
+    display: inline; /* Hace que los elementos de la lista se muestren en línea horizontalmente */
+    margin-right: 20px; /* Espaciado entre elementos */
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white; /* Color del texto de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el mouse por encima */
+}
+.span-destacado {
+    border-radius: 10px; /* Radio de las esquinas */
+    padding: 0px 6px; /* Espaciado interior para el contenido */
+    color: white; /* Color del texto */
+    font-size: smaller;
+ 
+}
